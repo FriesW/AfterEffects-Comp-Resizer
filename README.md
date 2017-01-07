@@ -1,4 +1,5 @@
 # AfterEffects-Comp-Resizer
+For Adobe After Effects. Tested to work in CS6.
 
 ## Why
 A while ago I was working on a very large project involving lots of animation. Near the end I realized I needed an extra 10 pixels on the edge of a composition. Continuously rasterizing was not an option, and resizing with the Composition Settings causes all masks and positions to be scaled proportionally, ruining most of my animations and masks.
@@ -28,7 +29,7 @@ Word of warning: The script has not been heavily tested, and was developed until
   * The script does make an entry in the undo history, so one ctrl-z *should* undo everything.
 
 ## Limitations/Warnings
-The script was developed until it met my requirements. After that I stopped development, and I have not used the script since. As of such, testing is very sparse, and some features or uses may not produce desired results. Following is a list of known limitations.
+The script was developed until it met my requirements. After that I stopped development, and I have not used the script since. As of such, testing is very sparse, and some features or uses may not produce desired results. It has been run in CS6, and it is unknown if it works in other versions. Following is a list of known limitations.
 
 * Clipboard Content
   * Script leverages the clipboard, and thus will overwrite anything on it and leave it with unknown items.
