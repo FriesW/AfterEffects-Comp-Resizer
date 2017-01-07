@@ -1,5 +1,3 @@
-﻿//WARNING not complete! Needs to move layers which are parented to the resize target layer.
-
 {
     
     function ScaleComposition(thisObj)
@@ -28,6 +26,7 @@
         //writeLn(TEXT);//useful, writes to the info panel in AE
         //clearOutput();//clears the info panel in AE
         
+		  //REF: http://blogs.adobe.com/wp-content/blogs.dir/48/files/2012/06/After-Effects-CS6-Scripting-Guide.pdf?file=2012/06/After-Effects-CS6-Scripting-Guide.pdf
         //Page 124 for modifying properties
         //Page 127 has a mask example
         
@@ -114,7 +113,7 @@
                 
                 //Initialization
                 updateUI();
-                alert("WARNING not complete! Needs to move layers which are parented to the resize target layer. Check these manually. They usually have to move by the \"left\" and \"right\" values.", scriptName);
+                alert("WARNING: Backup the project before using this script.\nKnown Limitations:\n- Overwrites clipboard\n- Ignores parented items\n- Doesn't support separated anchor points, anchor point expressions, or mask path expressions", scriptName);
                 
             }
             
@@ -513,8 +512,8 @@
         // 
         // The main script.
         //
-        if (parseFloat(app.version) < 8) {
-            alert("This script requires After Effects CS3 or later, I think. Use at your own risk.", scriptName);
+        if (parseFloat(app.version) < 11 || parseFloat(app.version) >= 12) {
+            alert("This script is known to work with After Effects CS6. Use at your own risk.", scriptName);
         }
         
         var my_palette = BuildAndShowUI(thisObj);
