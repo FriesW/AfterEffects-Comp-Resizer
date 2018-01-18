@@ -14,19 +14,19 @@ This script will add a variable number of pixels to each of the four composition
 Word of warning: The script has not been heavily tested, and was developed until it met my one-time need. Make a backup of your work before using this script. I'm not responsible for messing up your project file, especially if you don't keep backups of your work.
 
 1. Backup your work.
-  * File -> Save As -> Save a Copy...
+    * File -> Save As -> Save a Copy...
 1. Select target composition.
-  * Best way is to assure that the Composition window is active with the target composition.
+    * Best way is to assure that the Composition window is active with the target composition.
 1. Open resize script.
-  * File -> Scripts -> Run Script File... -> (open script file)
+    * File -> Scripts -> Run Script File... -> (open script file)
 1. Use GUI.
-  1. Head limitations warning.
-  1. Check that target composition is correct.
-  1. Set desired values.
-  1. Go!
+    1. Heed limitations warning.
+    1. Check that target composition is correct.
+    1. Set desired values.
+    1. Go!
 1. Manual check.
-  * Go through every instance of the target composition and make sure it produced the expected results.
-  * The script does make an entry in the undo history, so one ctrl-z *should* undo everything.
+    * Go through every instance of the target composition and make sure it produced the expected results.
+    * The script does make an entry in the undo history, so one ctrl-z *should* undo everything.
 
 ## Limitations/Warnings
 The script was developed until it met my requirements. After that I stopped development, and I have not used the script since. As of such, testing is very sparse, and some features or uses may not produce desired results. It has been run in CS6, and it is unknown if it works in other versions. Following is a list of known limitations.
